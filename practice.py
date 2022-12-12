@@ -1,6 +1,7 @@
 user = input("> ").lower()
 status = 'unknown'
 statusflag = 'unknown'
+# main script
 while user != "quit":
     if user == statusflag:
         print(f"the car already {status}")

@@ -39,5 +39,4 @@ def computer_guess(x, y, my_number):
 
 x, y, my_number = int(input("set a parameter(min) ")), int(input("set a parameter(max) ")), int(input("what`s your secret number? "))
 
-
 computer_guess(x, y, my_number)

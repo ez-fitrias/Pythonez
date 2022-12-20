@@ -35,3 +35,6 @@ def car_game():
             print("I don't understand...")
         user = input("> ").lower()
         gap(1)
+
+
+car_game()

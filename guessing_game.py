@@ -13,7 +13,7 @@ def help():
     os.system('cls')
     ask = ''
     while ask != 'quit':
-        print("guesses - show how many times you've guessing")
+        print("guesses - show how many times you've been guessing")
         print("lives - show how many chances left to guess")
         print("history - show your previous guess + status(too low/too high)")
         print("quit - back to the game")

@@ -20,10 +20,20 @@ array = [2, 8, 7, 16, 18, 9, 0, 1]
 
 # insertion_sort()
 
+
 def attempt():
     array = [9, 4, 5, 2, 7, 0, 1]
     for i in range(1, len(array)):
-        i = j
+        j = i
         while array[j] < array[j - 1] and j != 0:
             array[j], array[j - 1] = array[j - 1], array[j]
             j -= 1
+
+'''array = [5, 9, 4, 7, 2, 8, 6, 0, 1]
+for i in range(1, len(array)):
+    while array[i] < array[i - 1] and i != 0:
+        array[i - 1], array[i] = array[i], array[i - 1]
+        i -= 1
+    print("".join(str(array)))'''
+
+insertion_sort()

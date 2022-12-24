@@ -39,7 +39,7 @@ def help():
 
 
 def guessing_game():
-    os.system('cls')
+    gap(0.75)
     print('welcome to guessing game')
     gap(1)
     print('define the number range')
@@ -93,10 +93,21 @@ def guessing_game():
         else:
             print("invalid input")
     gap(0.75)
+    return lives, guesses, c_num
+    
+
+play = input('hello there, do you want to play a guessing number game? (y/n) ').lower()
+if play == 'y':
+    print('okay then')
+    time.sleep(0.75)
+    print('let\'s get started')
+    guessing_game()
     if lives != 0:
         print(f'congrats!, got it in {guesses} guesses')
     else:
         print(f'sorry, the number was {c_num}')
 
-
-guessing_game()
+else:
+    print('okay, bye!')
+    time.sleep(0.75)
+    quit()

@@ -11,18 +11,13 @@ def numbers():
     time.sleep(0.75)
     for i in range(total):
         num3 = []
-        if num > 1:
-            for o in range(num):
-                member = f'{num2} x {num} = {num2 * num}'
-                num3.append(member)
-                num2 += 1
-            num2 = 1
-            print("|" + '|'.join(num3) + '|')
-            num += 1
-
-        else:
-            print(f"|{num2} x {num} = {num2 * num}|" * num)
-            num += 1
+        for o in range(num):
+            member = f'{num2} x {num} = {num2 * num}'
+            num3.append(member)
+            num2 += 1
+        num2 = 1
+        print("|" + '|'.join(num3) + '|')
+        num += 1
 
 
 numbers()
